@@ -1,0 +1,7 @@
+{
+  "appId": "com.footy3d.game",
+  "appName": "Footy 3D",
+  "webDir": "www",
+  "backgroundColor": "#000000",
+  "server": { "androidScheme": "https" }
+}
