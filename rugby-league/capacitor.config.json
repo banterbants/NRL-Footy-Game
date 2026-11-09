@@ -1,0 +1,7 @@
+{
+  "appId": "com.sixthtackle.game",
+  "appName": "Sixth Tackle",
+  "webDir": "www",
+  "backgroundColor": "#0b1512",
+  "ios": { "contentInset": "never", "scrollEnabled": false }
+}

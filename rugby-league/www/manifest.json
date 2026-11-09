@@ -1,0 +1,13 @@
+{
+  "name": "Sixth Tackle",
+  "short_name": "Sixth Tackle",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0b1512",
+  "theme_color": "#0b1512",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-1024.png", "sizes": "1024x1024", "type": "image/png" }
+  ]
+}
