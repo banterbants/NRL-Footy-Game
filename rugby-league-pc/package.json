@@ -1,0 +1,21 @@
+{
+  "name": "sixth-tackle-pc",
+  "productName": "Sixth Tackle",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Sixth Tackle - an arcade 3D rugby league game for PC",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "start": "electron .",
+    "dist": "node build.mjs && electron-packager . \"Sixth Tackle\" --platform=win32 --arch=x64 --out=release --overwrite --ignore=\"^/(src|release|build\\.mjs|README\\.md)\" --ignore=\"^/node_modules\""
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "@fontsource/barlow-condensed": "^5.0.0",
+    "electron": "^33.2.0",
+    "esbuild": "^0.24.0",
+    "three": "^0.170.0"
+  }
+}
