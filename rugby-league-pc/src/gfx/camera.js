@@ -23,7 +23,7 @@ export class Director {
     switch (this.mode) {
       case 'play':
         if (c.style === 'side') {
-          tp.set(clamp(f.x, -44, 44) * 0.92, 26 + by * 0.2, 62); tl.set(f.x, 0.5 + by * 0.4, f.z * 0.6 - 1.5); fov = 30;
+          tp.set(clamp(f.x, -44, 44) * 0.92, 24 + by * 0.2, clamp(f.z + 50, 38, 62)); tl.set(f.x, 0.5 + by * 0.4, f.z * 0.88 - 1); fov = 30;
         } else {
           const off = 21 + (c.defending ? 3 : 0) + by * 0.5, h = 12 + (c.defending ? 1 : 0) + by * 0.3;
           tp.set(f.x - d * off, h, clamp(f.z * 0.82, -30, 30)); tl.set(f.x + d * (c.defending ? 9 : 6), 1.4 + by * 0.45, f.z * 0.94); fov = 50;

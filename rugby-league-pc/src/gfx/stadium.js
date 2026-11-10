@@ -122,7 +122,7 @@ export class Stadium {
     g.font = `800 ${P * 3.1}px ${FONT}`;
     for (let x = -FL + 10; x < FL; x += 10) {
       const label = String(50 - Math.abs(x));
-      for (const z of [-28.5, 28.5]) { g.save(); g.translate(X(x), Z(z)); if (z < 0) g.rotate(Math.PI); g.fillText(label[0], -P * 1.25, 0); g.fillText(label[1], P * 1.25, 0); g.restore(); }
+      for (const z of [-28.5, 28.5]) { g.save(); g.translate(X(x), Z(z)); g.fillText(label[0], -P * 1.25, 0); g.fillText(label[1], P * 1.25, 0); g.restore(); }
     }
     // run-off: a darker track ring with a painted sponsor mat behind each dead-ball line
     g.fillStyle = 'rgba(0,0,0,.2)'; g.fillRect(0, 0, PW * P, Z(-FW - 4)); g.fillRect(0, Z(FW + 4), PW * P, PH * P);
