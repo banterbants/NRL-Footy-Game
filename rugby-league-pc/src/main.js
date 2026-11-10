@@ -278,5 +278,5 @@ function project(x, y, z) {
   return [(proj.x * 0.5 + 0.5) * gfx.w, (-proj.y * 0.5 + 0.5) * gfx.h, proj.z < 1 && Math.abs(proj.x) < 1.05 && Math.abs(proj.y) < 1.05];
 }
 
-window.__st = { G, app, settings, TEAMS, input, fast(n, dt = 1 / 60) { for (let i = 0; i < n; i++) frame(dt, false); }, get menus() { return menus; }, get director() { return director; } };
+window.__st = { G, app, settings, TEAMS, input, fast(n, dt = 1 / 60, draw = false) { for (let i = 0; i < n; i++) frame(dt, draw); }, get menus() { return menus; }, get director() { return director; } };
 boot();

@@ -359,7 +359,7 @@ export class Match {
     for (const m of this.squads[t]) {
       if (m === c || m.down > 0) continue;
       if ((m.x - c.x) * d > 0.7) continue;                         // no forward passes
-      const dd = dist(m, c); if (dd < 1.6 || dd > 30) continue;
+      const dd = dist(m, c); if (dd < 2.6 || dd > 30) continue;
       const lat = (m.x - c.x) * bs.lx + (m.z - c.z) * bs.lz; if (Math.abs(lat) < 1.2) continue;
       (lat > 0 ? R : L).push([dd, m]);
     }
